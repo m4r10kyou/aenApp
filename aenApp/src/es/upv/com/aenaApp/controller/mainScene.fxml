@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="fondo" prefHeight="674.0" prefWidth="918.0" style="-fx-background-color: black;" stylesheets="@../view/application.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.upv.com.aenaApp.controller.mainSceneController">
+   <children>
+      <HBox alignment="CENTER" layoutX="6.0" layoutY="626.0" prefHeight="25.0" prefWidth="912.0">
+         <children>
+            <Button id="botones" layoutX="156.0" layoutY="1032.0" mnemonicParsing="false" onAction="#airportsWindow" prefWidth="260.0" text="Aeropuertos" textAlignment="CENTER">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-50.0">
+               <image>
+                  <Image url="@../../../../../images/airports.png" />
+               </image>
+            </ImageView>
+            <Button id="botones" layoutX="166.0" layoutY="1042.0" mnemonicParsing="false" onAction="#fligthsWindow" prefHeight="25.0" prefWidth="260.0" text="Estadísticas Vuelos">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-40.0">
+               <image>
+                  <Image url="@../../../../../images/stats.png" />
+               </image>
+            </ImageView>
+            <Button id="botones" layoutX="176.0" layoutY="1052.0" mnemonicParsing="false" onAction="#salir" prefWidth="260.0" text="Salir">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ImageView fitHeight="23.0" fitWidth="23.0" pickOnBounds="true" preserveRatio="true" translateX="-40.0">
+               <image>
+                  <Image url="@../../../../../images/salir.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefWidth="912.0">
+         <children>
+            <Label text="Gestor Datos de ">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" proportional="false" radius="0.5">
+                     <stops>
+                        <Stop color="BLACK" />
+                        <Stop color="BLACK" offset="0.007662835249042145" />
+                        <Stop color="WHITE" offset="0.2375478927203065" />
+                        <Stop color="WHITE" offset="0.9725085910652921" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="Gill Sans Ultra Bold" size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/aenaSS.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

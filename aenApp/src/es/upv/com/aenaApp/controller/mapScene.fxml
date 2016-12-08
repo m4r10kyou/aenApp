@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="mapAirports" prefHeight="266.0" prefWidth="588.0" stylesheets="@../view/application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+   <children>
+      <Button layoutX="350.0" layoutY="38.0" minHeight="0.0" minWidth="2.0" mnemonicParsing="false" prefHeight="9.0" prefWidth="8.0" />
+   </children>
+</AnchorPane>

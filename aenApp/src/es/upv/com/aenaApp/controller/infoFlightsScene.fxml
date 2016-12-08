@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="513.0" prefWidth="955.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.upv.com.aenaApp.controller.infoFlightsSceneController">
+
+	<children>
+		<HBox alignment="CENTER" layoutX="14.0" layoutY="14.0">
+			<children>
+				<ImageView fx:id="icon" blendMode="EXCLUSION" fitHeight="75.0" fitWidth="84.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@../../../../../images/header_llegadas.png" />
+					</image>
+				</ImageView>
+				<Label fx:id="airportType" layoutX="84.0" layoutY="37.0" text="tipoAeropuerto">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font></Label>
+				<Label fx:id="airportName" layoutX="94.0" layoutY="47.0" text="nombreAeropuerto">
+               <font>
+                  <Font name="Gill Sans MT Bold Italic" size="12.0" />
+               </font></Label>
+			</children>
+		</HBox>
+		<ScrollPane fx:id="scrollPane" fitToHeight="true" focusTraversable="false" hbarPolicy="NEVER" layoutX="19.0" layoutY="95.0" maxHeight="-Infinity" prefHeight="338.0" prefViewportHeight="73.0" prefViewportWidth="692.0" prefWidth="928.0" style="-fx-background-color: transparent;" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="19.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="95.0">
+			<content>
+				<VBox fx:id="fData11" layoutX="19.0" layoutY="95.0" AnchorPane.bottomAnchor="336.0">
+					<children>
+                   <VBox fx:id="fData10">
+                     <children>
+                        <VBox fx:id="fData9">
+                           <children>
+                               <VBox fx:id="fData8">
+                                 <children>
+                                     <VBox fx:id="fData7">
+                                       <children>
+                                          <VBox fx:id="fData6">
+                                             <children>
+                                                 <VBox fx:id="fData5">
+                                                   <children>
+                                                      <VBox fx:id="fData4">
+                                                         <children>
+                                                            <VBox fx:id="fData3">
+                                                               <children>
+                                                                  <VBox fx:id="fData2">
+                                                                     <children>
+                                                                        <VBox fx:id="fData1">
+                                                                           <children>
+                                                                              <VBox fx:id="fData">
+                                                                                 <children>
+                                                                  						<Label fx:id="date" layoutX="33.0" layoutY="92.0" text="Fecha" />
+                                                                  						<TableView fx:id="listTable" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" layoutX="19.0" layoutY="118.0" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                                                                  							<columns>
+                                                                  								<TableColumn fx:id="horaVuelo" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                                                                  								<TableColumn fx:id="numVuelo" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                                                                  								<TableColumn fx:id="airportColumn" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                                                                  								<TableColumn fx:id="statusVuelo" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                                                                  								<TableColumn fx:id="modelPlane" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                                                                  								<TableColumn fx:id="company" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                                                                  								<TableColumn fx:id="delay" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                                                                  							</columns>
+                                                                  							<columnResizePolicy>
+                                                                  								<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                                  							</columnResizePolicy>
+                                                                  							<VBox.margin>
+                                                                  								<Insets top="10.0" />
+                                                                  							</VBox.margin>
+                                                                  						</TableView>
+                                                                                 </children>
+                                                                              </VBox>
+                                                            								<Label fx:id="date1" text="Fecha">
+                                                                                 <VBox.margin>
+                                                                                    <Insets top="20.0" />
+                                                                                 </VBox.margin>
+                                                                              </Label>
+                                                            								<TableView fx:id="listTable1" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                                                            									<columns>
+                                                            										<TableColumn fx:id="horaVuelo1" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                                                            										<TableColumn fx:id="numVuelo1" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                                                            										<TableColumn fx:id="airportColumn1" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                                                            										<TableColumn fx:id="statusVuelo1" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                                                            										<TableColumn fx:id="modelPlane1" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                                                            										<TableColumn fx:id="company1" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                                                            										<TableColumn fx:id="delay1" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                                                            									</columns>
+                                                            									<columnResizePolicy>
+                                                            										<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                            									</columnResizePolicy>
+                                                            									<VBox.margin>
+                                                            										<Insets top="10.0" />
+                                                            									</VBox.margin>
+                                                            								</TableView>
+                                                                           </children>
+                                                                        </VBox>
+                                                      								<Label fx:id="date2" text="Fecha">
+                                                                           <VBox.margin>
+                                                                              <Insets top="20.0" />
+                                                                           </VBox.margin>
+                                                                        </Label>
+                                                      										<TableView fx:id="listTable2" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                                                      											<columns>
+                                                      												<TableColumn fx:id="horaVuelo2" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                                                      												<TableColumn fx:id="numVuelo2" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                                                      												<TableColumn fx:id="airportColumn2" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                                                      												<TableColumn fx:id="statusVuelo2" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                                                      												<TableColumn fx:id="modelPlane2" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                                                      												<TableColumn fx:id="company2" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                                                      												<TableColumn fx:id="delay2" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                                                      											</columns>
+                                                      											<columnResizePolicy>
+                                                      												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                      											</columnResizePolicy>
+                                                      											<VBox.margin>
+                                                      												<Insets top="10.0" />
+                                                      											</VBox.margin>
+                                                      										</TableView>
+                                                                     </children>
+                                                                  </VBox>
+                                                								<Label fx:id="date3" text="Fecha">
+                                                                     <VBox.margin>
+                                                                        <Insets top="20.0" />
+                                                                     </VBox.margin>
+                                                                  </Label>
+                                                										<TableView fx:id="listTable3" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                                                											<columns>
+                                                												<TableColumn fx:id="horaVuelo3" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                                                												<TableColumn fx:id="numVuelo3" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                                                												<TableColumn fx:id="airportColumn3" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                                                												<TableColumn fx:id="statusVuelo3" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                                                												<TableColumn fx:id="modelPlane3" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                                                												<TableColumn fx:id="company3" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                                                												<TableColumn fx:id="delay3" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                                                											</columns>
+                                                											<columnResizePolicy>
+                                                												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                                											</columnResizePolicy>
+                                                											<VBox.margin>
+                                                												<Insets top="10.0" />
+                                                											</VBox.margin>
+                                                										</TableView>
+                                                               </children>
+                                                            </VBox>
+                                          										<Label fx:id="date4" text="Fecha">
+                                                               <VBox.margin>
+                                                                  <Insets top="20.0" />
+                                                               </VBox.margin>
+                                                            </Label>
+                                          										<TableView fx:id="listTable4" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                                          											<columns>
+                                          												<TableColumn fx:id="horaVuelo4" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                                          												<TableColumn fx:id="numVuelo4" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                                          												<TableColumn fx:id="airportColumn4" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                                          												<TableColumn fx:id="statusVuelo4" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                                          												<TableColumn fx:id="modelPlane4" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                                          												<TableColumn fx:id="company4" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                                          												<TableColumn fx:id="delay4" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                                          											</columns>
+                                          											<columnResizePolicy>
+                                          												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                          											</columnResizePolicy>
+                                          											<VBox.margin>
+                                          												<Insets top="10.0" />
+                                          											</VBox.margin>
+                                          										</TableView>
+                                                         </children>
+                                                      </VBox>
+                                    										<Label fx:id="date5" text="Fecha">
+                                                         <VBox.margin>
+                                                            <Insets top="20.0" />
+                                                         </VBox.margin>
+                                                      </Label>
+                                    										<TableView fx:id="listTable5" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                                    											<columns>
+                                    												<TableColumn fx:id="horaVuelo5" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                                    												<TableColumn fx:id="numVuelo5" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                                    												<TableColumn fx:id="airportColumn5" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                                    												<TableColumn fx:id="statusVuelo5" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                                    												<TableColumn fx:id="modelPlane5" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                                    												<TableColumn fx:id="company5" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                                    												<TableColumn fx:id="delay5" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                                    											</columns>
+                                    											<columnResizePolicy>
+                                    												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                                    											</columnResizePolicy>
+                                    											<VBox.margin>
+                                    												<Insets top="10.0" />
+                                    											</VBox.margin>
+                                    										</TableView>
+                                                   </children>
+                                                </VBox>
+                              										<Label fx:id="date6" text="Fecha">
+                                                   <VBox.margin>
+                                                      <Insets top="20.0" />
+                                                   </VBox.margin>
+                                                </Label>
+                              										<TableView fx:id="listTable6" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                              											<columns>
+                              												<TableColumn fx:id="horaVuelo6" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                              												<TableColumn fx:id="numVuelo6" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                              												<TableColumn fx:id="airportColumn6" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                              												<TableColumn fx:id="statusVuelo6" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                              												<TableColumn fx:id="modelPlane6" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                              												<TableColumn fx:id="company6" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                              												<TableColumn fx:id="delay6" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                              											</columns>
+                              											<columnResizePolicy>
+                              												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                              											</columnResizePolicy>
+                              											<VBox.margin>
+                              												<Insets top="10.0" />
+                              											</VBox.margin>
+                              										</TableView>
+                                             </children>
+                                          </VBox>
+                        										<Label fx:id="date7" text="Fecha">
+                                             <VBox.margin>
+                                                <Insets top="20.0" />
+                                             </VBox.margin>
+                                          </Label>
+                        										<TableView fx:id="listTable7" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                        											<columns>
+                        												<TableColumn fx:id="horaVuelo7" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                        												<TableColumn fx:id="numVuelo7" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                        												<TableColumn fx:id="airportColumn7" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                        												<TableColumn fx:id="statusVuelo7" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                        												<TableColumn fx:id="modelPlane7" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                        												<TableColumn fx:id="company7" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                        												<TableColumn fx:id="delay7" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                        											</columns>
+                        											<columnResizePolicy>
+                        												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                        											</columnResizePolicy>
+                        											<VBox.margin>
+                        												<Insets top="10.0" />
+                        											</VBox.margin>
+                        										</TableView>
+                                       </children>
+                                    </VBox>
+                  										<Label fx:id="date8" text="Fecha">
+                                       <VBox.margin>
+                                          <Insets top="20.0" />
+                                       </VBox.margin>
+                                    </Label>
+                  										<TableView fx:id="listTable8" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+                  											<columns>
+                  												<TableColumn fx:id="horaVuelo8" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+                  												<TableColumn fx:id="numVuelo8" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+                  												<TableColumn fx:id="airportColumn8" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+                  												<TableColumn fx:id="statusVuelo8" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+                  												<TableColumn fx:id="modelPlane8" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+                  												<TableColumn fx:id="company8" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+                  												<TableColumn fx:id="delay8" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+                  											</columns>
+                  											<columnResizePolicy>
+                  												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                  											</columnResizePolicy>
+                  											<VBox.margin>
+                  												<Insets top="10.0" />
+                  											</VBox.margin>
+                  										</TableView>
+                                 </children>
+                              </VBox>
+            										<Label fx:id="date9" text="Fecha">
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </Label>
+            										<TableView fx:id="listTable9" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+            											<columns>
+            												<TableColumn fx:id="horaVuelo9" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+            												<TableColumn fx:id="numVuelo9" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+            												<TableColumn fx:id="airportColumn9" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+            												<TableColumn fx:id="statusVuelo9" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+            												<TableColumn fx:id="modelPlane9" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+            												<TableColumn fx:id="company9" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+            												<TableColumn fx:id="delay9" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+            											</columns>
+            											<columnResizePolicy>
+            												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            											</columnResizePolicy>
+            											<VBox.margin>
+            												<Insets top="10.0" />
+            											</VBox.margin>
+            										</TableView>
+                           </children>
+                        </VBox>
+      										<Label fx:id="date10" text="Fecha">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+      										<TableView fx:id="listTable10" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+      											<columns>
+      												<TableColumn fx:id="horaVuelo10" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+      												<TableColumn fx:id="numVuelo10" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+      												<TableColumn fx:id="airportColumn10" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+      												<TableColumn fx:id="statusVuelo10" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+      												<TableColumn fx:id="modelPlane10" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+      												<TableColumn fx:id="company10" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+      												<TableColumn fx:id="delay10" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+      											</columns>
+      											<columnResizePolicy>
+      												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+      											</columnResizePolicy>
+      											<VBox.margin>
+      												<Insets top="10.0" />
+      											</VBox.margin>
+      										</TableView>
+                     </children>
+                  </VBox>
+										<Label fx:id="date11" text="Fecha">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Label>
+										<TableView fx:id="listTable11" cacheShape="false" centerShape="false" fixedCellSize="0.0" focusTraversable="false" minHeight="-Infinity" pickOnBounds="false" prefHeight="46.0" prefWidth="890.0" scaleShape="false" VBox.vgrow="NEVER">
+											<columns>
+												<TableColumn fx:id="horaVuelo11" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Hora Salida" />
+												<TableColumn fx:id="numVuelo11" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Vuelo" />
+												<TableColumn fx:id="airportColumn11" editable="false" prefWidth="248.0" resizable="false" sortable="false" text="Destino" />
+												<TableColumn fx:id="statusVuelo11" editable="false" prefWidth="158.0" resizable="false" sortable="false" text="Estado vuelo" />
+												<TableColumn fx:id="modelPlane11" editable="false" prefWidth="130.0" resizable="false" sortable="false" text="Modelo " />
+												<TableColumn fx:id="company11" editable="false" prefWidth="122.0" resizable="false" sortable="false" text="Compañía" />
+												<TableColumn fx:id="delay11" editable="false" prefWidth="50.0" resizable="false" sortable="false" text="Retraso" />
+											</columns>
+											<columnResizePolicy>
+												<TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+											</columnResizePolicy>
+											<VBox.margin>
+												<Insets top="10.0" />
+											</VBox.margin>
+										</TableView>
+					</children>
+					<padding>
+						<Insets top="20.0" />
+					</padding>
+				</VBox>
+			</content>
+		</ScrollPane>
+		<Button focusTraversable="false" layoutX="477.0" layoutY="465.0" mnemonicParsing="false" onAction="#okButton" text="Volver">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Gill Sans MT Bold" size="12.0" />
+         </font></Button>
+	</children>
+</AnchorPane>

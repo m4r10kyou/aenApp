@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.upv.com.aenaApp.controller.flightsSceneController">
+   <children>
+      <ComboBox fx:id="airports" layoutX="162.0" layoutY="327.0" prefWidth="150.0" />
+      <Label layoutX="183.0" layoutY="242.0" text="Label" textFill="#0000000e" />
+   </children>
+</AnchorPane>

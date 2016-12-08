@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="738.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.upv.com.aenaApp.controller.StaticsSceneController">
+   <children>
+      <TableView fx:id="airportTable" layoutX="24.0" layoutY="76.0" prefHeight="584.0" prefWidth="631.0" AnchorPane.leftAnchor="24.0">
+        <columns>
+          <TableColumn fx:id="airportColumn" prefWidth="167.0" text="Aeropuerto" />
+          <TableColumn prefWidth="463.0" resizable="false" text="Vuelos">
+               <columns>
+                  <TableColumn fx:id="totalFlights" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Total" />
+                  <TableColumn fx:id="localFlights" editable="false" prefWidth="107.0" resizable="false" sortable="false" text="Nacionales" />
+                  <TableColumn fx:id="interFligths" editable="false" prefWidth="116.0" resizable="false" sortable="false" text="Internacionales" />
+                  <TableColumn fx:id="averageColumn" editable="false" prefWidth="93.0" resizable="false" sortable="false" text="Media por día" />
+                  <TableColumn fx:id="delayColumn" editable="false" prefWidth="59.0" sortable="false" text="Retraso" />
+               </columns></TableColumn>
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="493.0" layoutY="687.0" prefWidth="1272.0" AnchorPane.leftAnchor="24.0">
+         <children>
+            <Button layoutX="946.0" layoutY="705.0" mnemonicParsing="false" onAction="#btnVolver" text="Volver">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox fx:id="editAirportsBox" alignment="CENTER" layoutX="820.0" layoutY="115.0">
+         <children>
+            <Label layoutX="806.0" layoutY="134.0" text="Introduce Número de Aeropuertos">
+               <font>
+                  <Font name="Gill Sans MT" size="12.0" />
+               </font></Label>
+            <TextField fx:id="numAirportsField" layoutX="922.0" layoutY="130.0" onKeyPressed="#enterPressed2">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btnOk" mnemonicParsing="false" onAction="#setValue" onKeyPressed="#enterPressed" text="Fijar">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Gill Sans MT Bold Italic" size="12.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="822.0" layoutY="29.0" AnchorPane.rightAnchor="50.0">
+         <children>
+            <Button id="botonesST" fx:id="btSingle" mnemonicParsing="false" onAction="#setLineChart" stylesheets="@../view/application.css" text="Vuelos de Un Aeropuerto">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="botonesST" fx:id="btnDelay" layoutX="796.0" layoutY="39.0" mnemonicParsing="false" onAction="#setBarChart" stylesheets="@../view/application.css" text="Retraso Medio Aeropuertos">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="botonesST" fx:id="btnMultiply" layoutX="816.0" layoutY="59.0" mnemonicParsing="false" onAction="#setPieChart" stylesheets="@../view/application.css" text="Vuelos Aeropuertos">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <LineChart fx:id="numFlightsUnique" layoutX="660.0" layoutY="76.0" prefHeight="584.0" prefWidth="600.0" visible="true" AnchorPane.rightAnchor="24.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <BarChart fx:id="barChartDelay" layoutX="660.0" layoutY="173.0" prefHeight="488.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="77.0" AnchorPane.rightAnchor="24.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <PieChart fx:id="pieChartFlights" layoutX="668.0" layoutY="157.0" prefHeight="488.0" prefWidth="600.0" visible="false" AnchorPane.bottomAnchor="77.0" AnchorPane.rightAnchor="24.0" />
+   </children>
+</AnchorPane>

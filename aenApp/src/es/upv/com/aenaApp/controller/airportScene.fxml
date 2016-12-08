@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="414.0" prefWidth="500.0" style="-fx-background-color: #90ce00;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.upv.com.aenaApp.controller.airportSceneController">
+   <children>
+      <ComboBox fx:id="airports" focusTraversable="false" layoutX="44.0" layoutY="187.0" prefWidth="150.0" promptText="Elija aeropuerto">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <HBox alignment="CENTER" layoutX="268.0" layoutY="53.0">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="121.0" layoutX="-52.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/header_llegadas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnLlegada" focusTraversable="false" mnemonicParsing="false" onAction="#llegadas" style="-fx-background-color: transparent;" text="Llegadas">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="44.0" layoutY="53.0">
+         <children>
+            <ImageView fitHeight="78.0" fitWidth="121.0" layoutX="-52.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../images/header_salidas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnSalida" focusTraversable="false" mnemonicParsing="false" onAction="#salidas" style="-fx-background-color: transparent;" text="Salidas">
+               <font>
+                  <Font name="Gill Sans MT Bold" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+      <DatePicker fx:id="rangoInicio" editable="false" focusTraversable="false" layoutX="44.0" layoutY="275.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <DatePicker fx:id="rangoFin" editable="false" focusTraversable="false" layoutX="295.0" layoutY="275.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </DatePicker>
+      <Label layoutX="44.0" layoutY="21.0" text="Listado de Vuelos">
+         <font>
+            <Font name="Gill Sans MT Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="categAeropuerto" layoutX="46.0" layoutY="163.0">
+         <font>
+            <Font name="Gill Sans MT Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="44.0" layoutY="250.0">
+         <font>
+            <Font name="Gill Sans MT Italic" size="12.0" />
+         </font></Label>
+      <Label layoutX="294.0" layoutY="250.0">
+         <font>
+            <Font name="Gill Sans MT Italic" size="12.0" />
+         </font></Label>
+      <HBox alignment="CENTER" layoutX="45.0" layoutY="369.0" prefHeight="22.0" prefWidth="429.0">
+         <children>
+            <Button focusTraversable="false" layoutX="64.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnVolver" text="Volver">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gill Sans MT Bold" size="12.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="300.0" />
+               </HBox.margin>
+            </Button>
+            <Button focusTraversable="false" layoutX="369.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnBuscar" style="-fx-background-color: #1a2732;" text="Buscar" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Gill Sans MT Italic" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

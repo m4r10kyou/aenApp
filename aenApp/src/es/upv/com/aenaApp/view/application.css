@@ -1,0 +1,68 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+/*Fondo Principal */
+#fondo {
+	-fx-background-image: url(../../../../../images/backgroundMain.jpg);
+	/*-fx-background-image: url(../../../../../images/batman.jpeg);*/
+	-fx-background-size:912.0,600.0;
+   	-fx-background-repeat: no-repeat;   
+   	-fx-background-position: top center;
+}
+
+/* Implementable a un posible fxml que pasemos para seleccionar Airport por mapa
+#mapAirports {
+	-fx-background-image: url(../../../../../images/map.png);
+	-fx-background-size:588.0,266.0;
+   	-fx-background-repeat: no-repeat;   
+   	-fx-background-position: top center;
+}
+*/
+
+#botones {
+    -fx-background-color: 
+        rgba(0.0,0.0,0.0,0.08),
+        linear-gradient(#ffab23,#ffec64);
+    -fx-background-insets: 0.0 0.0 -1.0 0.0,0.0,1.0;
+    -fx-background-radius: 5.0,5.0,4.0;
+    -fx-padding: 3.0 30.0 3.0 30.0;
+    -fx-text-fill: #242d35;
+    -fx-font-size: 12.0px;
+    -fx-font: 15.0 'Gill Sans Ultra Bold';
+    }
+    
+#botones:hover {
+    -fx-background-color: 
+            linear-gradient(#ffec64, #ffab23);
+    }
+    
+    
+#botonesST {
+    -fx-background-color: 
+        rgba(0.0,0.0,0.0,0.08),
+        linear-gradient(#90ce00,#90bd41);
+    -fx-background-insets: 0.0 0.0 -1.0 0.0,0.0,1.0;
+    -fx-background-radius: 5.0,5.0,4.0;
+    -fx-padding: 3.0 30.0 3.0 30.0;
+    -fx-text-fill: white;
+    -fx-font-size: 12.0px;
+    -fx-font: 12.0 'Gill Sans Ultra Bold';
+    }
+    
+#botonesST:hover {
+    -fx-background-color: 
+            linear-gradient(#90bd41, #90ce00);
+    }
+    
+    #botonesST_selected {
+    -fx-background-color: 
+    		 rgba(0.0,0.0,0.0,0.08),
+            linear-gradient(#1a6873, #1a2732);
+                -fx-background-insets: 0.0 0.0 -1.0 0.0,0.0,1.0;
+    -fx-background-radius: 5.0,5.0,4.0;
+    -fx-padding: 3.0 30.0 3.0 30.0;
+    -fx-text-fill: white;
+    -fx-font-size: 12.0px;
+    -fx-font: 12.0 'Gill Sans Ultra Bold';
+    
+    }
+    
+    
